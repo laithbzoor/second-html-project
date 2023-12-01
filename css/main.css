@@ -1,0 +1,272 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  header{
+    background-color: rgba(64, 47, 47, 0.499);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+  }
+  .logo{
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: large;
+
+  }
+
+  .navigation a{
+    
+    color: azure;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+  }
+  
+ .navigation a:hover{
+    color: black;
+ }
+ section{
+  padding: 100px 200px;
+ }
+ .main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/img/22.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+ }
+ .main h2{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: azure;
+
+ }
+ .main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgba(122, 59, 1, 0.825);
+
+ }
+ .main h3{
+    color: azure;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+ }
+ .main-button{
+    color: azure;
+    font-size: 2em;
+    text-decoration: none;
+    background-color:rgba(122, 59, 1, 0.825);
+    font-weight: 600;
+    display: inline-block;
+    padding: .97535em 2.1857em ;
+    border-radius: 55px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+    }
+  .main-button:hover{
+    background-color: rgba(88, 31, 0, 0.89);
+    transform: scale(1.1);
+
+  }
+  .social-icons a{
+    color: azure;
+    display: inline-block;
+    padding: 0.5em 1.25em ;
+    font-size: 1.7em;
+    padding-right:30px;
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    color: rgba(122, 59, 1, 0.825);
+    font-weight: 800;
+    font-size: 2.2em;
+    margin-bottom:40px;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card{
+    width:21em ;
+    background-color:rgba(64, 47, 47, 0.499);
+    box-shadow: 0 25px 60px rgba(1 1 1 /15% );
+    border-radius: 25px;
+    padding: 25px;
+    margin: 15px;
+  }
+
+
+.card:hover{
+  transform: scale(1.1);
+  transition: .7s ease;
+
+}
+.icon{
+  color: azure;
+  padding: auto;
+  font-size: 7em;
+  text-align: center;
+}
+.info{
+  text-align: center;
+}
+.info h3{
+  color: azure;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 10px;
+}
+.cards{
+  background: url(/img/gray.png);
+}
+.projects{
+  background:rgb(1, 9, 29);
+}
+.projects .content{
+  margin-top: 30px;
+  
+}
+.projects .title{
+  color: azure;
+}
+.project-card{
+  background-color: rgba(240, 255, 255, 0.292);
+  border: 1px solid azure;
+  min-height: 14em;
+  width: 19em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: .7s ease;
+}
+.project-card:hover{
+  transform: scale(1.1);
+}
+
+.project-card:hover .project-images{ 
+  opacity:0.9;
+}
+
+.project-images img{
+  width: 100%;
+}
+.project-info{
+  padding: 1em;
+}
+
+.project-category{
+  font-size: 0.8em;
+  color : rgb(1, 9, 29);
+}
+.project-title{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color:azure
+}
+.more-details{
+  text-decoration: none;
+  color: rgb(8, 146, 227);
+}
+.more-details:hover{
+ color: rgb(0, 0, 34);
+}
+.contact .info p{
+color: aqua;
+  font-size: 1em;
+}
+.contact .title{
+  color: azure;
+}
+.footer{
+  background-color: rgba(64, 47, 47, 0.499);
+  padding: 2em;
+  color: azure;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.footer-title span{
+  color: black;
+}
+
+.footer .social-icons a{
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+  
+}
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+  .navigation a{
+    padding-left: 10px;
+  }
+  .title{
+    font-size: 1.8em;
+  }
+  section{
+    padding: 80px 20px;
+  }
+  .main-content h2{
+    font-size: 1em;
+  }
+  .main-content h3{
+    font-size: 1.6em;
+  }
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+ @media (max-width:641px) {
+  body{
+    font-size: 12px;
+  }
+  .main-content h2 {
+    font-size: 0.8em;
+  }
+  .main-content h3{
+    font-size: 1.4em;
+  }
+
+ }
+ @media (max-width:300px) {
+  body{
+    font-size: 10px;
+  }
+ }
